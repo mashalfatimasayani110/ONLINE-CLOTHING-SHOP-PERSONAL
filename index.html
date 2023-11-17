@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Clothing Store, Clothing Website, HTML, CSS, JavaScript, BOOTSTRAP">
+    <meta name="author" content="Jyoti Garde">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- syle css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- themify icons -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Mashal Clothes</title>
+</head>
+
+<body>
+
+    <!-- navbar section -->
+
+    <section class="header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="Mashal Clothes">
+                    <p class="logo"><a href="index.html">Mashal Clothing</a></p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-align-justify navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#products" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./women.html">Women's Wear</a></li>
+                                <li><a class="dropdown-item" href="./kids.html">Kid's Wear</a></li>
+                                <li><a class="dropdown-item" href="./men.html">Men's Wear</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="search-bar">
+
+                            <form class="d-flex search-bar">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-dark" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"><i class="fas fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- home section -->
+
+    <section class="home pt-5 overflow-hidden">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="home-banner home-banner-1">
+                        <div class="home-banner-text">
+                            <h1>Women</h1>
+                            <h2>25% Discount for this season</h2>
+                            <a href="./women.html" class="btn btn-danger text-uppercase mt-4">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="home-banner home-banner-2">
+                        <div class="home-banner-text">
+                            <h1>Kid's</h1>
+                            <h2>50% Discount for this season</h2>
+                            <a href="./kids.html" class="btn btn-danger text-uppercase mt-4">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="home-banner home-banner-3">
+                        <div class="home-banner-text">
+                            <h1>Men</h1>
+                            <h2>35% Discount for this season</h2>
+                            <a href="./men.html" class="btn btn-danger text-uppercase mt-4">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- offer section -->
+
+        <div class="offers my-5">
+            <div class="container">
+                <div class="row">
+                    <!-- offer box1 -->
+
+                    <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+                        <a href="./men.html">
+                            <div class="offer-box text-center position-relative">
+                                <div class="offer-inner">
+                                    <div class="offer-image position-relative overflow-hidden">
+                                        <img src="./images/offer1.jpg" alt="Offers" class="img-fluid">
+                                        <div class="offer-overlay"></div>
+                                    </div>
+                                    <div class="offer-info">
+                                        <div class="offer-info-inner">
+                                            <p class="heading-bigger text-uppercase">Sale</p>
+                                            <p class="offer-title-1 font-weight-bold">upto <span class="heading-bigger">
+                                                    50%</span></p>
+                                            <button type="button"
+                                                class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- offer box2 -->
+                    <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
+                        <a href="./women.html">
+                            <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                                <div class="offer-inner">
+                                    <div class="offer-image position-relative overflow-hidden">
+                                        <img src="./images/offer2.jpg" alt="Offers" class="img-fluid">
+                                        <div class="offer-overlay"></div>
+                                    </div>
+                                    <div class="offer-info">
+                                        <div class="offer-info-inner">
+                                            <p class="heading-bigger text-uppercase">Sale</p>
+                                            <p class="offer-title-1 font-weight-bold">upto <span class="heading-bigger">
+                                                    45%</span></p>
+                                            <button type="button"
+                                                class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./kids.html">
+                            <div class="offer-box text-center position-relative">
+                                <div class="offer-inner">
+                                    <div class="offer-image position-relative overflow-hidden">
+                                        <img src="./images/offer3.png" alt="Offers" class="img-fluid">
+                                        <div class="offer-overlay"></div>
+                                    </div>
+                                    <div class="offer-info">
+                                        <div class="offer-info-inner">
+                                            <p class="heading-bigger text-uppercase">Sale</p>
+                                            <p class="offer-title-1 font-weight-bold">upto <span class="heading-bigger">
+                                                    30%</span></p>
+                                            <button type="button"
+                                                class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- offer box3 -->
+
+                    <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+                        <a href="./women.html">
+                            <div class="offer-box text-center position-relative">
+                                <div class="offer-inner">
+                                    <div class="offer-image position-relative overflow-hidden">
+                                        <img src="./images/offer4.png" alt="Offers" class="img-fluid">
+                                        <div class="offer-overlay"></div>
+                                    </div>
+                                    <div class="offer-info">
+                                        <div class="offer-info-inner">
+                                            <p class="heading-bigger text-uppercase">Sale</p>
+                                            <p class="offer-title-1 font-weight-bold">upto <span class="heading-bigger">
+                                                    25%</span></p>
+                                            <button type="button"
+                                                class="btn btn-outline-danger text-uppercase mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- special section -->
+
+    <section class="special">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center mb-5">
+                        <h1 class="pb-3 position-relative d-inline-block text-uppercase">Season Sale</h1>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-7 text-center text-lg-start">
+                    <div class="countdown-container pt-3">
+                        <h2>Women's Western Long One Piece</h2>
+
+                        <div class="py-1">
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star active"></span>
+                            <span class="ti-star"></span>
+                        </div>
+
+                        <span class="countdown-price h3 d-block my-2"> <del>$650</del> $550 </span>
+                        <p class="my-3">Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit.
+                            Nesciunt aliquam earum cupiditate
+                            quo neque quam blanditiis ea facilis
+                            saepe repellendus! Ab cupiditate est
+                            debitis sunt pariatur qui illo officiis nobis.</p>
+
+                        <ul class="list-unstyled countdown-counter">
+                            <li><span class="fs-1 d-block" id="days">05</span> <span class="coundown-text">Days</span>
+                            </li>
+                            <li><span class="fs-1 d-block" id="hours">120</span> <span class="coundown-text">Hrs</span>
+                            </li>
+                            <li><span class="fs-1 d-block" id="min">7200</span> <span class="coundown-text">Min</span>
+                            </li>
+                            <li><span class="fs-1 d-block" id="sec">432000</span> <span class="coundown-text">Sec</span>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-danger">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-5 text-center">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/specialOffer.jpg" alt="Special Offer Image" class="img-fluid">
+                        <span class="special-offer">
+                            <p>Special  Discount Offer</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top products -->
+    <section class="product" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center">
+                        <h1 class="pb-3 position-relative d-inline-block">Top Products</h1>
+                    </div>
+                </div>
+                <div class="text-center mb-5">
+                    <a href="./women.html">
+                        <button type="button" class="btn btn-danger mt-3 mx-2">Women's Wear</button>
+                    </a>
+                    <a href="./kids.html">
+                        <button type="button" class="btn btn-danger mt-3 mx-2">Kid's Wear</button>
+                    </a>
+                    <a href="./men.html">
+                        <button type="button" class="btn btn-danger mt-3 mx-2">Men's Wear</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/wp1.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1000PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/kp1.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1300PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/mp2.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1350PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/kp3.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">4200PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/mp3.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1200PKR</p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/wp6.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1350PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/mp7.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1250PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image position-relative">
+                                <img src="./images/wp8.jpg" alt="product" class="img-fluid">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1400PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="./productView.html" class="d-block text-center mb-4">
+                        <div class="prodcut-list">
+                            <div class="product-image">
+                                <img src="./images/kp8.jpg" alt="product" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="product-name">
+                                <div class="py-1">
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star active"></span>
+                                    <span class="ti-star"></span>
+                                </div>
+                                <h4 class="text-capitalize">Casual dress</h4>
+                                <p class="mb-2 fs-5 text-danger">1000PKR </p>
+
+                                <button type="button" class="btn btn-danger">Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+            
+            <div></div>
+        </div>
+    </section>
+
+    <!-- parallax section -->
+
+    <div class="parallax">
+        <div class="container">
+            <div class="parallax-content" style="background: rgb(255,255,255,.7);">
+                <h1>WE OFFER THE BEST PRODUCTS</h1>
+                <p class="offer-title-1 font-weight-bold fs-4"><span class="heading-bigger">50%</span> OFF</p>
+                <p class="heading-bigger text-uppercase"></p>
+                <h4 class="lead fs-4">LIMITED OFFER! SO HURRY UP</h4>
+                <a href="#product" class="btn btn-danger text-uppercase mt-4">Our Products</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- top brand section -->
+    <section class="top-brands">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center mb-4">
+                        <h1 class="position-relative d-inline-block text-uppercase">Top Brands</h1>
+                    </div>
+                </div>
+
+                <div class="container-fluid top-brand-container">
+                    <ul class="d-flex justify-content-space-between align-items-center ps-0">
+                        <li class="top-brand-item">
+                            <img src="./images/topBrand1.png" alt="Top Brand logo">
+                        </li>
+                        <li class="top-brand-item">
+                            <img src="./images/topBrand2.png" alt="Top Brand logo">
+                        </li>
+                        <li class="top-brand-item">
+                            <img src="./images/topBrand3.png" alt="Top Brand logo">
+                        </li>
+                        <li class="top-brand-item">
+                            <img src="./images/topBrand4.png" alt="Top Brand logo">
+                        </li>
+                        <li class="top-brand-item">
+                            <img src="./images/topBrand5.jpg" alt="Top Brand logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section -->
+
+    <section class="testimonial mt-4">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-heading text-center mb-5">
+                        <h1 class="pb-3 position-relative d-inline-block text-uppercase">TESTIMONIALS</h1>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-lg-8 offset-lg-2 text-center">
+                    <div id="carouselExampleIndicatorsTwo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-wrapper">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="images/3.png" alt="user" class="img-fluid">
+                                        </div>
+                                        <div class="username">
+                                            <h3>CEO</h3>
+                                            <span>MASHAL CLOTHING LTD.</span>
+                                            <p class="lead fs-6">Mashal Clothing Wear provides a category for all Children, Women & Men. which derives its unique style from the clothes worn in the 19th century Wild West.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="testimonial-wrapper">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="images/7.png" alt="user" class="img-fluid">
+                                        </div>
+                                        <div class="username">
+                                            <h3> Co-Founder</h3>
+                                            <span>MASHAL CLOTHING LTD.</span>
+                                            <p class="lead fs-6">Mashal Clothing Wear provides a category for all Children, Women & Men. which derives its unique style from the clothes worn in the 19th century Wild West.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="footer-section bg-dark text-light text-center">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <div class="footer-contact">
+                        <h2>Links</h2>
+                        <div class="contact-link-box">
+                            <a href="./index.html">Home</a>
+                            <a href="./contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 footer-col">
+                    <div class="footer_detail">
+                        <a href="./index.html" class="footer-logo">
+                            <h2>Mashal Clothing</h2>
+                        </a>
+                        <p class="lead fs-6">
+                        Mashal Clothing Wear provides a category for all Children, Women & Men. which derives its unique style from the clothes worn in the 19th century Wild West.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 footer-col">
+                    <h2>Follow Us On</h2>
+                    <br>
+
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/mashal-fatima-sayani-365516189/">
+                            <i class="fab fa-linkedin-in fs-4"></i>
+                        </a>
+                        <br>
+                        <a href="https://github.com/mashalfatimasayani110">
+                            <i class="fab fa-github fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>&copy; Copyright 2023 Mashal Clothing | Designed by MASHAL FATIMA SAYANI</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
